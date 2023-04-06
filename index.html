@@ -24,6 +24,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -35,7 +36,7 @@
           >
           <ul class="header-list list">
             <li class="header-item">
-              <a class="header-link link" href="./index.html">Studio</a>
+              <a class="header-link curent link" href="./index.html">Studio</a>
             </li>
             <li class="header-item">
               <a class="header-link link" href="./portfolio.html">Portfolio</a>
@@ -67,7 +68,9 @@
           <div class="container-title">
             <h1 class="main-title">Effective Solutions for Your Business</h1>
           </div>
-          <button class="main-btn" type="button">Order Service</button>
+          <button class="main-btn" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <section class="main-section-two">
@@ -463,5 +466,16 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-button" data-modal-close type="button">
+          <svg class="modal-icon" width="8" height="8">
+            <use href="./images/symbol-defs.svg#icon-close-1"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
